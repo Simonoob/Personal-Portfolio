@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+  }
 
+body{
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
 
@@ -18,21 +22,71 @@ body{
         position: fixed;
         z-index: -1;
     }
+    #home{
+        #opening{
+            background-color: $bg-color-2-transparent;
+            margin: 30vh auto 55vh auto;
+            width: max-content;
+            display: flex;
+            justify-content: center;
 
-    #opening{
-        background-color: $bg-color-2-transparent;
-        #opening-sentence{
-            margin-top: 30vh;
-            padding: 4rem;
-            line-height: 4rem;
-        }
-        .btn-floating{
-            background-color: $attention-transparent;
-            min-width: fit-content;
-            border-radius: 2px;
-            padding: 0 1rem;
+            .btn-floating{
+                background-color: $attention-transparent;
+                min-width: fit-content;
+                max-width: 100%;
+                border-radius: 2px;
+                padding: 0 1rem;
+            }
+    
+            #opening-sentence{
+                padding: 4rem;
+                line-height: 4rem;
+            }
+    
+            #contact{
+                background-color: $attention-transparent-2;
+            }
         }
     }
+
+
+    #navbar{
+        background-color: $attention-transparent;
+        position: sticky;
+        top: 0;
+        padding-left: 1rem;
+        z-index: 1;
+    }
+
+    #projects{
+        background-color: $bg-color-2-transparent;
+        margin-top:30vh;
+        padding: 5rem 0;
+
+        h3{
+            color: $attention;
+        }
+
+        .card{
+            margin: 5rem;
+            display: flex;
+            align-items: center;
+            background-color: $bg-light;
+            .btn , .btn-floating{
+                background-color: $attention;
+                min-width: fit-content;
+                max-width: 100%;
+                border-radius: 2px;
+                padding: 0 1rem;
+            }
+
+
+            .btn{
+                background-color: $bg-color;
+            }
+        }
+    }
+
 
     .highlight{
         color: $attention;
