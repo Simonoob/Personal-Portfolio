@@ -72,6 +72,7 @@ body{
             display: flex;
             align-items: center;
             background-color: $bg-light;
+            z-index: 0;
             .btn , .btn-floating{
                 background-color: $attention;
                 min-width: fit-content;
