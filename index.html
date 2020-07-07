@@ -32,17 +32,17 @@
                     Hello,
                     <br>
                     I'm
-                    <span class="highlight">Simone Fiorentini</span>.
+                    <span id="name">Simone Fiorentini</span>.
                     <br>
                     I'm a font-end web developer.
                 </em>
             </h3>
 
-            <a id="contact-me" href="#contact"
+            <a id="contact-me" href="#contact-container"
                 class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text top white-text">Contact
                 me</a>
 
-            <a href="#projects"
+            <a href="#projects-container"
                 class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text left">Check my
                 work</a>
         </div>
@@ -54,21 +54,20 @@
     <!--NAVBAR-->
     <nav id="navbar" class="hide-on-med-and-down">
         <div class="nav-wrapper">
-            <a href="#home" class="brand-logo black-text tilt">S. F.</a>
+            <a href="#home" class="brand-logo tilt waves-effect waves-light">S. F.</a>
             <ul class="right tilt">
-                <li><a href="#projects" class="black-text flow-text">projects</a></li>
-                <li><a href="#about" class="black-text flow-text">about</a></li>
-                <li><a href="#contact" class="black-text flow-text">contacts</a></li>
+                <li><a href="#projects-container" class="waves-effect waves-light flow-text">projects</a></li>
+                <li><a href="#about-container" class="waves-effect waves-light flow-text">about</a></li>
+                <li><a href="#contact-container" class="waves-effect waves-light flow-text">contacts</a></li>
             </ul>
         </div>
     </nav>
 
-    <!--ABOUT-->
 
-
+    
 
     <!--PROJECTS-->
-    <div class="container">
+    <div class="container" id="projects-container">
         <div class="card tilt-light" id="projects" data-tilt-reverse="true">
             <h3 class="center-align">My latest work</h3>
 
@@ -128,10 +127,10 @@
                             The website relies heavily on DOM manipulation and CSS manipulation. It has all the classic
                             tools like color picking and erasing. In adition to that, it has a special "random color"
                             mode and a customizable grid system.</p>
-                        <a href="https://simonoob.github.io/List-maker-/" target="_blank"
+                        <a href="https://simonoob.github.io/Etch-a-Sketch/" target="_blank"
                             class="btn-floating halfway-fab waves-effect btn-large">Demo</a>
                         <div class="card-action">
-                            <a href="https://github.com/Simonoob/List-maker-" target="_blank"
+                            <a href="https://github.com/Simonoob/Etch-a-Sketch" target="_blank"
                                 class="btn waves-effect btn-large">code</a>
                         </div>
                     </div>
@@ -147,7 +146,7 @@
                         <h4>Personal Portfolio</h4>
                         <p>The very site you are visiting right now.
                             <br>
-                            It uses a combination of Particles.js, MaterializeCSS, Sass and JavaScript to run.</p>
+                            It uses a combination of Particles.js, VanillaTilt.js, MaterializeCSS, Sass and JavaScript.</p>
                         <a href="#home" class="btn-floating halfway-fab waves-effect btn-large">You are on it!</a>
                         <div class="card-action">
                             <a href="https://github.com/Simonoob/Personal-Portfolio" target="_blank"
@@ -165,8 +164,23 @@
 
 
 
+     <!--ABOUT-->
+     <div class="container" id="about-container">
+        <div id="about">
+            <div class="card tilt">
+                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis sequi aliquid, quod voluptate quia illum? Quo, expedita quibusdam. Id vitae quam at commodi consectetur placeat totam voluptatum dolorem ipsum?</p>
+                <a id="contact-me" href="#contact-container"
+                class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text">Message
+                me</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!--CONTACT-->
-    <div class="container">
+    <div class="container" id="contact-container">
         <div class="card" id="contact">
             <div class="card">
                 <h3 class="center-align">FILL-IN THE FORM BELOW</h3>
