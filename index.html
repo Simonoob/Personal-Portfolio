@@ -271,7 +271,7 @@
           <h3 class="center-align">FILL-IN THE FORM BELOW</h3>
         </div>
 
-        <form action="post" data-netlify="true">
+        <form action="post" data-netlify="true" data-netlify-recaptcha="true">
           <div class="input-field tilt">
             <input type="text" id="name" class="validate" required />
             <label for="name" class="active">Name</label>
@@ -292,7 +292,7 @@
             <label for="textarea" class="active">Message</label>
 
             <div class="input-field tilt">
-              <div data-netlify-recaptcha="true" required></div>
+              <div data-netlify-recaptcha="true"></div>
             </div>
           </div>
           <button
