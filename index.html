@@ -1,244 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-        crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Simone Fiorentini</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!--HOME-->
     <div id="particles-js"></div>
 
-
     <div class="container" id="home">
+      <div
+        class="card tilt"
+        id="opening"
+        data-tilt
+        data-tilt-full-page-listening
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <h3 id="opening-sentence" class="white-text flow-text">
+          <em>
+            Hello,
+            <br />
+            I'm
+            <span id="name">Simone Fiorentini</span>.
+            <br />
+            I'm a font-end web developer.
+          </em>
+        </h3>
 
-        <div class="card tilt" id="opening" data-tilt data-tilt-full-page-listening data-tilt-glare data-tilt-max-glare="0.8">
-            <h3 id="opening-sentence" class="white-text flow-text">
-                <em>
-                    Hello,
-                    <br>
-                    I'm
-                    <span id="name">Simone Fiorentini</span>.
-                    <br>
-                    I'm a font-end web developer.
-                </em>
-            </h3>
+        <a
+          id="contact-me"
+          href="#contact-container"
+          class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text top white-text"
+          >Contact me</a
+        >
 
-            <a id="contact-me" href="#contact-container"
-                class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text top white-text">Contact
-                me</a>
-
-            <a href="#projects-container"
-                class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text left">Check my
-                work</a>
-        </div>
-
+        <a
+          href="#projects-container"
+          class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text left"
+          >Check my work</a
+        >
+      </div>
     </div>
-
-
 
     <!--NAVBAR-->
     <nav id="navbar" class="hide-on-med-and-down">
-        <div class="nav-wrapper">
-            <a href="#home" class="brand-logo tilt waves-effect waves-light">S. F.</a>
-            <ul class="right tilt">
-                <li><a href="#projects-container" class="waves-effect waves-light flow-text">projects</a></li>
-                <li><a href="#about-container" class="waves-effect waves-light flow-text">about</a></li>
-                <li><a href="#contact-container" class="waves-effect waves-light flow-text">contacts</a></li>
-            </ul>
-        </div>
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo tilt waves-effect waves-light"
+          >S. F.</a
+        >
+        <ul class="right tilt">
+          <li>
+            <a
+              href="#projects-container"
+              class="waves-effect waves-light flow-text"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-container"
+              class="waves-effect waves-light flow-text"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-container"
+              class="waves-effect waves-light flow-text"
+              >contacts</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-
-
-    
 
     <!--PROJECTS-->
     <div class="container" id="projects-container">
-        <div class="card tilt-light" id="projects" data-tilt-reverse="true">
-            <h3 class="center-align">My latest work</h3>
-
-            <div class="card  tilt horizontal" >
-                <div class="card-image">
-                    <img src="https://media3.giphy.com/media/kdhvjJ5mszb1eU7XH5/giphy.gif" alt=""
-                        class="responsive-img">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <h4>Book Library</h4>
-                        <p>A full stack project involving front-end, real-time databases and user authentication.
-                            <br>
-                            It allows you to add books to your own personal library, mark when they are read and sync
-                            your data across any device.</p>
-                        <a href="https://simonoob.github.io/Book-Library/" target="_blank"
-                            class="btn-floating halfway-fab waves-effect btn-large">Demo</a>
-                        <div class="card-action">
-                            <a href="https://github.com/Simonoob/Book-Library" target="_blank"
-                                class="btn waves-effect btn-large">code</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="card" id="projects" data-tilt-reverse="true">
+        <h3 class="center-align">My latest work</h3>
+        <div class="cards-container">
+          <div class="card tilt horizontal">
+            <div class="card-image">
+              <img
+                src="https://media3.giphy.com/media/kdhvjJ5mszb1eU7XH5/giphy.gif"
+                alt=""
+                class="responsive-img"
+              />
             </div>
-
-
-            <div class="card  tilt horizontal">
-                <div class="card-image">
-                    <img src="https://media1.giphy.com/media/SXUNSmaRDXhzMM9jsq/giphy.gif" alt=""
-                        class="responsive-img">
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4>Book Library</h4>
+                <p>
+                  A full stack project involving front-end, real-time databases
+                  and user authentication.
+                  <br />
+                  It allows you to add books to your own personal library, mark
+                  when they are read and sync your data across any device.
+                </p>
+                <a
+                  href="https://simonoob.github.io/Book-Library/"
+                  target="_blank"
+                  class="btn-floating halfway-fab waves-effect btn-large"
+                  >Demo</a
+                >
+                <div class="card-action">
+                  <a
+                    href="https://github.com/Simonoob/Book-Library"
+                    target="_blank"
+                    class="btn waves-effect btn-large"
+                    >code</a
+                  >
                 </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <h4>Online Calculator</h4>
-                        <p>Online Calculator project to practice Javascript classes and Object oriented programming,
-                            andvanced logic and keyboard input registration.
-                        </p>
-                        <a href="https://simonoob.github.io/Online-Calculator/" target="_blank"
-                            class="btn-floating halfway-fab waves-effect btn-large">Demo</a>
-                        <div class="card-action">
-                            <a href="https://github.com/Simonoob/Online-Calculator" target="_blank"
-                                class="btn waves-effect btn-large">code</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="card  tilt horizontal">
-                <div class="card-image">
-                    <img src="https://media0.giphy.com/media/QTxg9r9CyLCbBGz5tS/giphy.gif">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <h4>Etch a Sketch</h4>
-                        <p>A desktop-only web-app that mimics the popular game.
-                            <br>
-                            The website relies heavily on DOM manipulation and CSS manipulation. It has all the classic
-                            tools like color picking and erasing. In adition to that, it has a special "random color"
-                            mode and a customizable grid system.</p>
-                        <a href="https://simonoob.github.io/Etch-a-Sketch/" target="_blank"
-                            class="btn-floating halfway-fab waves-effect btn-large">Demo</a>
-                        <div class="card-action">
-                            <a href="https://github.com/Simonoob/Etch-a-Sketch" target="_blank"
-                                class="btn waves-effect btn-large">code</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="card tilt horizontal">
+            <div class="card-image">
+              <img
+                src="https://media1.giphy.com/media/SXUNSmaRDXhzMM9jsq/giphy.gif"
+                alt=""
+                class="responsive-img"
+              />
             </div>
-
-            <div class="card tilt horizontal">
-                <div class="card-image">
-                    <img src="https://media2.giphy.com/media/VIJf2pOBthIUpqdd7S/giphy.gif">
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4>Online Calculator</h4>
+                <p>
+                  Online Calculator project to practice Javascript classes and
+                  Object oriented programming, andvanced logic and keyboard
+                  input registration.
+                </p>
+                <a
+                  href="https://simonoob.github.io/Online-Calculator/"
+                  target="_blank"
+                  class="btn-floating halfway-fab waves-effect btn-large"
+                  >Demo</a
+                >
+                <div class="card-action">
+                  <a
+                    href="https://github.com/Simonoob/Online-Calculator"
+                    target="_blank"
+                    class="btn waves-effect btn-large"
+                    >code</a
+                  >
                 </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <h4>Personal Portfolio</h4>
-                        <p>The very site you are visiting right now.
-                            <br>
-                            It uses a combination of Particles.js, VanillaTilt.js, MaterializeCSS, Sass and JavaScript.</p>
-                        <a href="#home" class="btn-floating halfway-fab waves-effect btn-large">You are on it!</a>
-                        <div class="card-action">
-                            <a href="https://github.com/Simonoob/Personal-Portfolio" target="_blank"
-                                class="btn waves-effect btn-large">code</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
 
+          <div class="card tilt horizontal">
+            <div class="card-image">
+              <img
+                src="https://media0.giphy.com/media/QTxg9r9CyLCbBGz5tS/giphy.gif"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4>Etch a Sketch</h4>
+                <p>
+                  A desktop-only web-app that mimics the popular game.
+                  <br />
+                  The website relies heavily on DOM manipulation and CSS
+                  manipulation. It has all the classic tools like color picking
+                  and erasing. In adition to that, it has a special "random
+                  color" mode and a customizable grid system.
+                </p>
+                <a
+                  href="https://simonoob.github.io/Etch-a-Sketch/"
+                  target="_blank"
+                  class="btn-floating halfway-fab waves-effect btn-large"
+                  >Demo</a
+                >
+                <div class="card-action">
+                  <a
+                    href="https://github.com/Simonoob/Etch-a-Sketch"
+                    target="_blank"
+                    class="btn waves-effect btn-large"
+                    >code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-
+          <div class="card tilt horizontal">
+            <div class="card-image">
+              <img
+                src="https://media2.giphy.com/media/VIJf2pOBthIUpqdd7S/giphy.gif"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4>Personal Portfolio</h4>
+                <p>
+                  The very site you are visiting right now.
+                  <br />
+                  It uses a combination of Particles.js, VanillaTilt.js,
+                  MaterializeCSS, Sass and JavaScript.
+                </p>
+                <a
+                  href="#home"
+                  class="btn-floating halfway-fab waves-effect btn-large"
+                  >You are on it!</a
+                >
+                <div class="card-action">
+                  <a
+                    href="https://github.com/Simonoob/Personal-Portfolio"
+                    target="_blank"
+                    class="btn waves-effect btn-large"
+                    >code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
-
-     <!--ABOUT-->
-     <div class="container" id="about-container">
-        <div id="about">
-            <div class="card tilt">
-                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis sequi aliquid, quod voluptate quia illum? Quo, expedita quibusdam. Id vitae quam at commodi consectetur placeat totam voluptatum dolorem ipsum?</p>
-                <a id="contact-me" href="#contact-container"
-                class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text">Message
-                me</a>
-            </div>
+    <!--ABOUT-->
+    <div class="container" id="about-container">
+      <div id="about">
+        <div class="card tilt">
+          <p class="flow-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            debitis sequi aliquid, quod voluptate quia illum? Quo, expedita
+            quibusdam. Id vitae quam at commodi consectetur placeat totam
+            voluptatum dolorem ipsum?
+          </p>
+          <a
+            id="contact-me"
+            href="#contact-container"
+            class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text"
+            >Message me</a
+          >
         </div>
+      </div>
     </div>
-
-
-
 
     <!--CONTACT-->
     <div class="container" id="contact-container">
-        <div class="card" id="contact">
-            <div class="card">
-                <h3 class="center-align">FILL-IN THE FORM BELOW</h3>
-            </div>
-
-            <form>
-                <div class="input-field tilt">
-                    <input type="text" id="name" class="validate">
-                    <label for="name" class="active">Name</label>
-                </div>
-
-
-                <div class="input-field tilt">
-                    <input type="email" id="email" class="validate">
-                    <label for="email" class="active">Email</label>
-                </div>
-
-                <div class="input-field tilt">
-                    <textarea type="text" id="textarea" class="validate materialize-textarea"></textarea>
-                    <label for="textarea" class="active">Message</label>
-                </div>
-                <button type="submit" class="btn btn-large waves-effect waves-light black center-align  tilt ">Submit</button>
-            </form>
+      <div class="card" id="contact">
+        <div class="card">
+          <h3 class="center-align">FILL-IN THE FORM BELOW</h3>
         </div>
+
+        <form action="post" data-netlify="true">
+          <div class="input-field tilt">
+            <input type="text" id="name" class="validate" />
+            <label for="name" class="active">Name</label>
+          </div>
+
+          <div class="input-field tilt">
+            <input type="email" id="email" class="validate" />
+            <label for="email" class="active">Email</label>
+          </div>
+
+          <div class="input-field tilt">
+            <textarea
+              type="text"
+              id="textarea"
+              class="validate materialize-textarea"
+            ></textarea>
+            <label for="textarea" class="active">Message</label>
+
+            <div class="input-field tilt">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-large waves-effect waves-light black center-align tilt"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
 
     <div style="height: 200vh;"></div>
 
     <!--FOOTER-->
 
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
-        integrity="sha256-6DDZX77BrYnAmK9a3N3tvNPtyTIk1q1w9iW+UBtot3Y=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+      integrity="sha256-6DDZX77BrYnAmK9a3N3tvNPtyTIk1q1w9iW+UBtot3Y="
+      crossorigin="anonymous"
+    ></script>
     <script src="./JS/main.js"></script>
     <script src="./JS/vanilla-tilt.min.js"></script>
     <script>
+      //initialize ParciclesJS
+      particlesJS.load(
+        "particles-js",
+        "./particlesjs-config.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        }
+      );
 
-        //initialize ParciclesJS
-        particlesJS.load('particles-js', './particlesjs-config.json', function () {
-            console.log('callback - particles.js config loaded');
-        });
+      //initialize MaterializeCSS
+      M.AutoInit();
 
-        //initialize MaterializeCSS
-        M.AutoInit();
-
-        //initialize Vanilla-TiltJS
-        VanillaTilt.init(document.querySelectorAll(".tilt"), {
-            max: 8,
-            speed: 400
-        });
-
-
+      //initialize Vanilla-TiltJS
+      VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 6.5,
+        speed: 400,
+      });
     </script>
-</body>
-
+  </body>
 </html>
