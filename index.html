@@ -273,18 +273,31 @@
 
         <form action="post" data-netlify="true">
           <div class="input-field tilt">
-            <input type="text" id="name" class="validate" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="validate"
+              required
+            />
             <label for="name" class="active">Name</label>
           </div>
 
           <div class="input-field tilt">
-            <input type="email" id="email" class="validate" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="validate"
+              required
+            />
             <label for="email" class="active">Email</label>
           </div>
 
           <div class="input-field tilt">
             <textarea
               type="text"
+              name="message"
               id="textarea"
               class="validate materialize-textarea"
               required
