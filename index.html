@@ -273,12 +273,12 @@
 
         <form action="post" data-netlify="true">
           <div class="input-field tilt">
-            <input type="text" id="name" class="validate" />
+            <input type="text" id="name" class="validate" required />
             <label for="name" class="active">Name</label>
           </div>
 
           <div class="input-field tilt">
-            <input type="email" id="email" class="validate" />
+            <input type="email" id="email" class="validate" required />
             <label for="email" class="active">Email</label>
           </div>
 
@@ -287,11 +287,12 @@
               type="text"
               id="textarea"
               class="validate materialize-textarea"
+              required
             ></textarea>
             <label for="textarea" class="active">Message</label>
 
             <div class="input-field tilt">
-              <div data-netlify-recaptcha="true"></div>
+              <div data-netlify-recaptcha="true" required></div>
             </div>
           </div>
           <button
