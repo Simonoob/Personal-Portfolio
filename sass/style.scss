@@ -120,8 +120,8 @@ body {
     padding-top: 10em;
 
     #projects {
-      background-color: $bg-color-2-transparent;
-      padding: 5rem 0;
+      background-color: black;
+      padding: 2rem 0;
 
       .cards-container {
         padding: 0 1.5rem;
@@ -130,18 +130,26 @@ body {
         grid-template-rows: repeat(auto-fit);
       }
 
-      h3 {
-        color: $attention;
+      #title {
+        background-color: $attention;
+        padding: 0.5rem;
+        justify-content: center;
+        #title-text {
+          color: black;
+        }
       }
 
       .card {
         margin: 1.5rem;
-        display: flex;
-        align-items: center;
         background-color: $bg-light;
         z-index: 0;
         transform-style: preserve-3d;
         transform: perspective(1000px);
+
+        img {
+          transform: scale(0.65);
+        }
+
         p {
           line-height: 2.5rem;
         }
@@ -157,6 +165,10 @@ body {
         .btn {
           background-color: $bg-color;
         }
+      }
+
+      .project {
+        transition: opacity 0.2s ease-in-out;
       }
     }
   }
@@ -292,4 +304,8 @@ body {
       }
     }
   }
+}
+
+.low-opacity {
+  opacity: 0.5;
 }
