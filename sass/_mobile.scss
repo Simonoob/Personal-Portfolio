@@ -1,0 +1,394 @@
+@import "variables";
+
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    #particles-js {
+      height: 100%;
+      width: 100vw;
+      background: $bg-color;
+      position: fixed;
+      z-index: -1;
+    }
+    #home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      #opening {
+        background-color: $bg-color-2-transparent;
+        margin: auto;
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+
+        .btn-floating {
+          background-color: $attention-transparent;
+          min-width: fit-content;
+          max-width: 100%;
+          border-radius: 2px;
+          padding: 0 0.5rem;
+          transform: translateZ(50px);
+          font-size: small;
+        }
+
+        #opening-sentence {
+          padding: 4rem;
+          line-height: 4rem;
+          #name {
+            color: $attention;
+            transform: translateZ(50px);
+          }
+        }
+
+        #contact-me {
+          background-color: $attention-transparent-2;
+        }
+      }
+    }
+
+    #navbar {
+      background-color: $attention-transparent;
+      position: fixed;
+      top: 0;
+      padding: 1rem;
+      height: fit-content;
+      z-index: 1;
+      transition: all 0.5s ease;
+
+      a {
+        color: black;
+        padding: 0 2rem;
+        margin: 0 2rem;
+        width: max-content;
+        text-align: center;
+      }
+
+      a:hover {
+        background-color: black;
+        color: $attention;
+      }
+    }
+
+    #slide-out {
+      background-color: $attention-transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      a {
+        background-color: black;
+        color: $attention;
+        font-size: x-large;
+        height: 9rem;
+        i {
+          color: $attention;
+          font-size: xx-large;
+        }
+      }
+    }
+
+    .sidenav-trigger {
+      padding: 0.5rem;
+      color: rgb(0, 0, 0);
+      background-color: $attention;
+      position: fixed;
+      top: 0rem;
+      right: 0rem;
+      z-index: 3;
+      .material-icons {
+        font-size: 40px;
+      }
+    }
+
+    #about {
+      height: 100vh;
+      margin: 20rem 0;
+      display: flex;
+      justify-content: center;
+      .carousel {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .carousel-item {
+        min-width: fit-content;
+        padding: 0 2rem;
+        cursor: grab;
+      }
+
+      .card {
+        padding: 0.5rem;
+        background-color: $bg-light-transparent;
+        z-index: 0;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        height: max-content;
+
+        .title {
+          background-color: black;
+          padding: 0.5rem;
+          color: $bg-light;
+          h3 {
+            font-size: large;
+          }
+        }
+
+        .card-content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          height: min-content;
+          p {
+            font-size: small;
+            color: black;
+          }
+        }
+
+        img {
+          width: 60px;
+          transform: translateZ(50px);
+          transition: all 0.2s ease-in-out;
+        }
+
+        img:hover {
+          transform: scale(1.5);
+        }
+
+        .card-title {
+          font-size: large;
+        }
+
+        #profile-photo {
+          width: 100%;
+          border-radius: 0%;
+          transform: scale(1);
+        }
+
+        #profile-photo:hover {
+          transform: scale(1);
+        }
+
+        .btn-floating {
+          background-color: black;
+          color: $bg-color;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    #projects-container {
+      padding-top: 0rem;
+      width: 100%;
+      #projects {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+
+        .cards-container {
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, 1fr);
+          grid-template-rows: repeat(auto-fit);
+        }
+
+        #title {
+          background-color: $attention;
+          padding: 0.5rem;
+          justify-content: center;
+          margin: 1rem 0;
+          #title-text {
+            color: black;
+            font-size: xx-large;
+          }
+        }
+
+        .card {
+          margin: 3rem 0;
+          background-color: $bg-light;
+          max-width: 85vw;
+          z-index: 0;
+          transform-style: preserve-3d;
+          transform: perspective(1000px);
+
+          .collapsible {
+            transform: translateZ(50px);
+            .collapsible-header,
+            i {
+              font-size: medium;
+              margin: auto 0;
+              text-align: center;
+            }
+          }
+
+          img {
+            transform: scale(1);
+          }
+
+          p {
+            line-height: 1.5rem;
+            font-size: small;
+          }
+          .btn,
+          .btn-floating {
+            background-color: $attention;
+            min-width: fit-content;
+            border-radius: 2px;
+            padding: 0 1rem;
+            transform: translateZ(20px);
+          }
+
+          .btn {
+            background-color: $bg-color;
+          }
+        }
+
+        .project {
+          transition: opacity 0.5s ease-in-out;
+        }
+      }
+    }
+
+    #contact-container {
+      padding-top: 0;
+      #contact {
+        background-color: $attention-transparent;
+        padding: 2rem;
+
+        .card {
+          background-color: black;
+          padding: 0.5rem;
+          h3 {
+            color: $bg-light;
+            font-size: xx-large;
+          }
+        }
+
+        label {
+          color: black;
+          font-size: large;
+        }
+
+        input,
+        textarea {
+          border-color: $bg-light;
+          margin: 1rem 0;
+          transform: translateZ(20px);
+        }
+
+        .input-field {
+          margin: 2rem 0;
+          transform-style: preserve-3d;
+          transform: perspective(1000px);
+        }
+
+        label {
+          font-size: x-large;
+        }
+
+        input.invalid:not([type]),
+        input.invalid:not([type]):focus,
+        input.invalid[type="text"]:not(.browser-default),
+        input.invalid[type="text"]:not(.browser-default):focus,
+        input.invalid[type="password"]:not(.browser-default),
+        input.invalid[type="password"]:not(.browser-default):focus,
+        input.invalid[type="email"]:not(.browser-default),
+        input.invalid[type="email"]:not(.browser-default):focus,
+        input.invalid[type="url"]:not(.browser-default),
+        input.invalid[type="url"]:not(.browser-default):focus,
+        input.invalid[type="time"]:not(.browser-default),
+        input.invalid[type="time"]:not(.browser-default):focus,
+        input.invalid[type="date"]:not(.browser-default),
+        input.invalid[type="date"]:not(.browser-default):focus,
+        input.invalid[type="datetime"]:not(.browser-default),
+        input.invalid[type="datetime"]:not(.browser-default):focus,
+        input.invalid[type="datetime-local"]:not(.browser-default),
+        input.invalid[type="datetime-local"]:not(.browser-default):focus,
+        input.invalid[type="tel"]:not(.browser-default),
+        input.invalid[type="tel"]:not(.browser-default):focus,
+        input.invalid[type="number"]:not(.browser-default),
+        input.invalid[type="number"]:not(.browser-default):focus,
+        input.invalid[type="search"]:not(.browser-default),
+        input.invalid[type="search"]:not(.browser-default):focus,
+        textarea.materialize-textarea.invalid,
+        textarea.materialize-textarea.invalid:focus,
+        .select-wrapper.invalid > input.select-dropdown,
+        .select-wrapper.invalid > input.select-dropdown:focus {
+          border-color: #f44336;
+          box-shadow: 0 1px 0 0 #f44336;
+        }
+
+        input.valid:not([type]),
+        input.valid:not([type]):focus,
+        input.valid[type="text"]:not(.browser-default),
+        input.valid[type="text"]:not(.browser-default):focus,
+        input.valid[type="password"]:not(.browser-default),
+        input.valid[type="password"]:not(.browser-default):focus,
+        input.valid[type="email"]:not(.browser-default),
+        input.valid[type="email"]:not(.browser-default):focus,
+        input.valid[type="url"]:not(.browser-default),
+        input.valid[type="url"]:not(.browser-default):focus,
+        input.valid[type="time"]:not(.browser-default),
+        input.valid[type="time"]:not(.browser-default):focus,
+        input.valid[type="date"]:not(.browser-default),
+        input.valid[type="date"]:not(.browser-default):focus,
+        input.valid[type="datetime"]:not(.browser-default),
+        input.valid[type="datetime"]:not(.browser-default):focus,
+        input.valid[type="datetime-local"]:not(.browser-default),
+        input.valid[type="datetime-local"]:not(.browser-default):focus,
+        input.valid[type="tel"]:not(.browser-default),
+        input.valid[type="tel"]:not(.browser-default):focus,
+        input.valid[type="number"]:not(.browser-default),
+        input.valid[type="number"]:not(.browser-default):focus,
+        input.valid[type="search"]:not(.browser-default),
+        input.valid[type="search"]:not(.browser-default):focus,
+        textarea.materialize-textarea.valid,
+        textarea.materialize-textarea.valid:focus,
+        .select-wrapper.valid > input.select-dropdown {
+          border-color: black;
+          box-shadow: 0 1px 0 0 black;
+        }
+
+        input:not([type]):focus:not([readonly]),
+        input[type="text"]:not(.browser-default):focus:not([readonly]),
+        input[type="password"]:not(.browser-default):focus:not([readonly]),
+        input[type="email"]:not(.browser-default):focus:not([readonly]),
+        input[type="url"]:not(.browser-default):focus:not([readonly]),
+        input[type="time"]:not(.browser-default):focus:not([readonly]),
+        input[type="date"]:not(.browser-default):focus:not([readonly]),
+        input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+        input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+        input[type="tel"]:not(.browser-default):focus:not([readonly]),
+        input[type="number"]:not(.browser-default):focus:not([readonly]),
+        input[type="search"]:not(.browser-default):focus:not([readonly]),
+        textarea.materialize-textarea:focus:not([readonly]) {
+          border-color: black;
+          box-shadow: none;
+        }
+
+        button {
+          font-size: x-large;
+          text-align: start;
+          transition: width 0.3s ease-in-out;
+          width: 0%;
+          min-width: fit-content;
+          z-index: 0;
+        }
+
+        button:hover {
+          max-width: 100%;
+          color: $attention;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

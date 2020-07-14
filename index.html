@@ -111,6 +111,45 @@
       </div>
     </nav>
 
+    <!-- MOBILE NAVBAR -->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a href="#home" class="flow-text tilt waves-effect waves-light"
+          >S. F.</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/Simonoob"
+          class="flow-text tilt waves-effect waves-light"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a href="#projects-container" class="waves-effect waves-light flow-text"
+          >projects</a
+        >
+      </li>
+      <li>
+        <a href="#about-container" class="waves-effect waves-light flow-text"
+          >about</a
+        >
+      </li>
+      <li>
+        <a href="#contact-container" class="waves-effect waves-light flow-text"
+          >contacts</a
+        >
+      </li>
+    </ul>
+
+    <a
+      href="#"
+      data-target="slide-out"
+      class="sidenav-trigger hide-on-med-and-up"
+      ><i class="material-icons">menu</i></a
+    >
+
     <!--PROJECTS-->
     <div class="container" id="projects-container">
       <div class="card" id="projects">
@@ -128,14 +167,24 @@
             </div>
             <div class="card-stacked">
               <div class="card-content">
-                <h4>Book Library</h4>
-                <p>
-                  A full stack project involving front-end, real-time databases
-                  and user authentication.
-                  <br />
-                  It allows you to add books to your own personal library, mark
-                  when they are read and sync your data across any device.
-                </p>
+                <ul class="collapsible popout">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">arrow_drop_down</i>
+                      Book Library
+                    </div>
+                    <div class="collapsible-body">
+                      <p>
+                        A full stack project involving front-end, real-time
+                        databases and user authentication.
+                        <br />
+                        It allows you to add books to your own personal library,
+                        mark when they are read and sync your data across any
+                        device.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
                 <a
                   href="https://simonoob.github.io/Book-Library/"
                   target="_blank"
@@ -164,12 +213,21 @@
             </div>
             <div class="card-stacked">
               <div class="card-content">
-                <h4>Online Calculator</h4>
-                <p>
-                  Online Calculator project to practice Javascript classes and
-                  Object oriented programming, andvanced logic and keyboard
-                  input registration.
-                </p>
+                <ul class="collapsible popout">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">arrow_drop_down</i>
+                      Online Calculator
+                    </div>
+                    <div class="collapsible-body">
+                      <p>
+                        Online Calculator project to practice Javascript classes
+                        and Object oriented programming, andvanced logic and
+                        keyboard input registration.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
                 <div class="card-action">
                   <a
                     href="https://github.com/Simonoob/Online-Calculator"
@@ -196,15 +254,25 @@
             </div>
             <div class="card-stacked">
               <div class="card-content">
-                <h4>Etch a Sketch</h4>
-                <p>
-                  A desktop-only web-app that mimics the popular game.
-                  <br />
-                  The website relies heavily on DOM manipulation and CSS
-                  manipulation. It has all the classic tools like color picking
-                  and erasing. In adition to that, it has a special "random
-                  color" mode and a customizable grid system.
-                </p>
+                <ul class="collapsible popout">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">arrow_drop_down</i>
+                      Etch a Sketch
+                    </div>
+                    <div class="collapsible-body">
+                      <p>
+                        A desktop-only web-app that mimics the popular game.
+                        <br />
+                        The website relies heavily on DOM manipulation and CSS
+                        manipulation. It has all the classic tools like color
+                        picking and erasing. In adition to that, it has a
+                        special "random color" mode and a customizable grid
+                        system.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
                 <a
                   href="https://simonoob.github.io/Etch-a-Sketch/"
                   target="_blank"
@@ -231,13 +299,22 @@
             </div>
             <div class="card-stacked">
               <div class="card-content">
-                <h4>Personal Portfolio</h4>
-                <p>
-                  The very site you are visiting right now.
-                  <br />
-                  It uses a combination of Particles.js, VanillaTilt.js,
-                  MaterializeCSS, Sass and JavaScript.
-                </p>
+                <ul class="collapsible popout">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">arrow_drop_down</i>
+                      Personal Portfolio
+                    </div>
+                    <div class="collapsible-body">
+                      <p>
+                        The very site you are visiting right now.
+                        <br />
+                        It uses a combination of Particles.js, VanillaTilt.js,
+                        MaterializeCSS, Sass and JavaScript.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
                 <div class="card-action">
                   <a
                     href="https://github.com/Simonoob/Personal-Portfolio"
@@ -344,16 +421,29 @@
           <a href="#three!" class="carousel-item">
             <div class="card large">
               <div class="card title">
-                <h3 class="center-align">ABOUT ME</h3>
+                <div class="card-image">
+                  <img
+                    src="https://picsum.photos/900/300"
+                    id="profile-photo"
+                    class="right"
+                  />
+                </div>
+                <span class="card-title">ABOUT ME</span>
               </div>
               <div class="card-content">
-                <img src="https://picsum.photos/300/300" id="profile-photo" />
                 <p class="flow-text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nulla tenetur aliquid quas ullam quasi, recusandae saepe nemo
                   velit quidem impedit, officia atque quos tempore architecto
                   aperiam tempora voluptatum! Explicabo, ipsam!
                 </p>
+                <button
+                  onclick="window.location.href='//github.com/Simonoob';"
+                  class="btn-floating halfway-fab waves-effect btn-large"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </button>
               </div>
             </div>
           </a>
@@ -411,8 +501,6 @@
       </div>
     </div>
 
-    <div style="height: 200vh;"></div>
-
     <!--FOOTER-->
 
     <!------------------------------------------------------------------------------------------>
@@ -439,10 +527,25 @@
       M.AutoInit();
 
       //initialize Vanilla-TiltJS
-      VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 5,
-        speed: 400,
-      });
+
+      let tiltingObjects = document.querySelectorAll(".tilt");
+
+      function isTilt(x) {
+        if (x.matches) {
+          tiltingObjects.forEach((element) => {
+            element.vanillaTilt ? element.vanillaTilt.destroy() : {};
+          });
+        } else {
+          VanillaTilt.init(tiltingObjects, {
+            max: 5,
+            speed: 400,
+          });
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 700px)");
+      isTilt(x);
+      x.addListener(isTilt);
     </script>
   </body>
 </html>

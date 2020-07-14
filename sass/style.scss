@@ -179,6 +179,16 @@ body {
         transform-style: preserve-3d;
         transform: perspective(1000px);
 
+        .collapsible {
+          transform: translateZ(50px);
+          .collapsible-header,
+          i {
+            font-size: x-large;
+            margin: auto 0;
+            text-align: center;
+          }
+        }
+
         img {
           transform: scale(0.65);
         }
@@ -342,3 +352,5 @@ body {
 .low-opacity {
   opacity: 0.3;
 }
+
+@import "mobile";
