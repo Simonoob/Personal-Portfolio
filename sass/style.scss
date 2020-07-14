@@ -23,9 +23,12 @@ body {
     z-index: -1;
   }
   #home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
     #opening {
       background-color: $bg-color-2-transparent;
-      margin: 30vh auto 55vh auto;
+      margin: auto;
       width: max-content;
       display: flex;
       justify-content: center;
@@ -66,15 +69,12 @@ body {
     z-index: 1;
     transition: all 0.5s ease;
 
-    .brand-logo {
-      padding: 0 5rem 0 1rem;
-      margin: 0;
-    }
-
     a {
       color: black;
       padding: 0 2rem;
       margin: 0 2rem;
+      width: max-content;
+      text-align: center;
     }
 
     a:hover {
@@ -83,48 +83,81 @@ body {
     }
   }
 
-  #about-container {
-    margin-top: 35vh;
+  #about {
+    height: 100vh;
     padding-top: 10em;
+    display: flex;
+    justify-content: center;
+    .carousel {
+      height: 100%;
+    }
 
-    #about {
+    .carousel-item {
+      min-width: fit-content;
       padding: 5rem;
+      cursor: grab;
+    }
 
-      .card {
-        margin: 5rem;
-        padding: 3rem;
-        display: flex;
-        align-items: center;
+    .card {
+      padding: 3rem;
+      background-color: $bg-light-transparent;
+      z-index: 0;
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
+      height: max-content;
+
+      .title {
         background-color: black;
-        z-index: 0;
-        transform-style: preserve-3d;
-        transform: perspective(1000px);
-        p {
-          color: $attention;
-        }
+        padding: 0.5rem;
+        color: $bg-light;
+      }
 
-        .btn-floating {
-          background-color: $attention;
-          min-width: fit-content;
-          max-width: 100%;
-          border-radius: 2px;
-          padding: 0 1rem;
-          transform: translateZ(50px);
-        }
+      .card-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      img {
+        width: 100px;
+        transform: translateZ(50px);
+        transition: all 0.2s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+
+      #profile-photo {
+        border-radius: 50%;
+        transform: scale(1);
+      }
+
+      #profile-photo:hover {
+        transform: scale(1);
+      }
+
+      .btn-floating {
+        background-color: $bg-light;
+        color: $bg-color;
+        min-width: fit-content;
+        max-width: 100%;
+        border-radius: 2px;
+        padding: 0 1rem;
+        transform: translateZ(50px);
       }
     }
   }
 
   #projects-container {
-    margin-top: 50vh;
-    padding-top: 10em;
-
+    padding-top: 10rem;
     #projects {
-      background-color: black;
-      padding: 2rem 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
 
       .cards-container {
-        padding: 0 1.5rem;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         grid-template-rows: repeat(auto-fit);
@@ -140,7 +173,7 @@ body {
       }
 
       .card {
-        margin: 1.5rem;
+        margin: 3rem;
         background-color: $bg-light;
         z-index: 0;
         transform-style: preserve-3d;
@@ -168,13 +201,12 @@ body {
       }
 
       .project {
-        transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
       }
     }
   }
 
   #contact-container {
-    margin-top: 35vh;
     padding-top: 10em;
     #contact {
       background-color: $attention-transparent;
@@ -295,6 +327,7 @@ body {
         transition: width 0.3s ease-in-out;
         width: 0%;
         min-width: fit-content;
+        z-index: 0;
       }
 
       button:hover {
@@ -307,5 +340,5 @@ body {
 }
 
 .low-opacity {
-  opacity: 0.5;
+  opacity: 0.3;
 }

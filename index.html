@@ -24,6 +24,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
 
     <title>Simone Fiorentini</title>
   </head>
@@ -70,9 +76,15 @@
     <!--NAVBAR-->
     <nav id="navbar" class="hide-on-med-and-down">
       <div class="nav-wrapper">
-        <a href="#home" class="brand-logo tilt waves-effect waves-light"
+        <a href="#home" class="flow-text tilt waves-effect waves-light"
           >S. F.</a
         >
+        <a
+          href="https://github.com/Simonoob"
+          class="flow-text tilt waves-effect waves-light"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
         <ul class="right tilt">
           <li>
             <a
@@ -247,21 +259,104 @@
     </div>
 
     <!--ABOUT-->
-    <div class="container" id="about-container">
+
+    <div class="container">
       <div id="about">
-        <div class="card tilt">
-          <p class="flow-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            debitis sequi aliquid, quod voluptate quia illum? Quo, expedita
-            quibusdam. Id vitae quam at commodi consectetur placeat totam
-            voluptatum dolorem ipsum?
-          </p>
-          <a
-            id="contact-me"
-            href="#contact-container"
-            class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text"
-            >Message me</a
-          >
+        <div class="carousel" id="about-container">
+          <a href="#one!" class="carousel-item">
+            <div class="card large">
+              <div class="card title">
+                <h3 class="center-align">WHAT I KNOW</h3>
+              </div>
+              <div class="card-content">
+                <img
+                  src="/imgs/HTML-5-01.svg"
+                  class="tooltipped"
+                  data-tooltip="Mark-up language. The basis of web programming"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/CSS-3-01.svg"
+                  class="tooltipped"
+                  data-tooltip="Styling language. It dresses your website"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/Sass-01.svg"
+                  class="tooltipped"
+                  data-tooltip="CSS pre-processor. It keeps the code organized"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/JavaScript-01.svg"
+                  class="tooltipped"
+                  data-tooltip="The protagonist of modern web-apps. It makes your site interactive"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/Git-01.svg"
+                  class="tooltipped"
+                  data-tooltip="Version Control System. It helps you in saving your code"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/GitHub-Icon-01.svg"
+                  class="tooltipped"
+                  data-tooltip="Github. A platform to store and share code"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/Materialize-CSS-01.svg"
+                  class="tooltipped"
+                  data-tooltip="MaterializeCSS. A front-end styling framework"
+                  data-position="top"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#two!" class="carousel-item">
+            <div class="card large">
+              <div class="card title">
+                <h3 class="center-align">WHAT I'M LEARNING</h3>
+              </div>
+              <div class="card-content">
+                <img
+                  src="/imgs/React-01.svg"
+                  class="tooltipped"
+                  data-tooltip="React.js. A front-end library/framework to simplify production"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/Npm-01.svg"
+                  class="tooltipped"
+                  data-tooltip="NPM. A way to download and store reusable code"
+                  data-position="top"
+                />
+                <img
+                  src="/imgs/Node-JS-01.svg"
+                  class="tooltipped"
+                  data-tooltip="Node.js. A JS-friendly way to work on the back-end"
+                  data-position="top"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#three!" class="carousel-item">
+            <div class="card large">
+              <div class="card title">
+                <h3 class="center-align">ABOUT ME</h3>
+              </div>
+              <div class="card-content">
+                <img src="https://picsum.photos/300/300" id="profile-photo" />
+                <p class="flow-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nulla tenetur aliquid quas ullam quasi, recusandae saepe nemo
+                  velit quidem impedit, officia atque quos tempore architecto
+                  aperiam tempora voluptatum! Explicabo, ipsam!
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -319,6 +414,8 @@
     <div style="height: 200vh;"></div>
 
     <!--FOOTER-->
+
+    <!------------------------------------------------------------------------------------------>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script
