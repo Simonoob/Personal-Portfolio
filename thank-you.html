@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Space+Mono:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+
+    <title>Thank you</title>
+  </head>
+
+  <body>
+    <!--HOME-->
+    <div id="particles-js" style="background-color: #304e60;"></div>
+
+    <div class="background">
+      <span class="S">S</span><span class="f">f</span>
+    </div>
+
+    <div class="container" id="home">
+      <div
+        class="card tilt"
+        id="opening"
+        data-tilt
+        data-tilt-full-page-listening
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+        style="background-color: #304e60;"
+      >
+        <h3 id="opening-sentence" class="white-text flow-text">
+          <em>
+            Your message has been received,
+            <br />
+            <span id="name" style="text-decoration: underline;">Thank you</span
+            >.
+            <br />
+          </em>
+        </h3>
+
+        <a
+          href="/index.html"
+          class="btn-floating btn-large halfway-fab waves-effect waves-light flow-text"
+          >Go back to the site</a
+        >
+      </div>
+    </div>
+    <!--FOOTER-->
+
+    <!------------------------------------------------------------------------------------------>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+      integrity="sha256-6DDZX77BrYnAmK9a3N3tvNPtyTIk1q1w9iW+UBtot3Y="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/vanilla-tilt.min.js"></script>
+    <script>
+      //initialize ParciclesJS
+      particlesJS.load(
+        "particles-js",
+        "./particlesjs-config.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        }
+      );
+
+      //initialize MaterializeCSS
+      M.AutoInit();
+
+      //initialize Vanilla-TiltJS
+
+      let tiltingObjects = document.querySelectorAll(".tilt");
+
+      function isTilt(x) {
+        if (x.matches) {
+          tiltingObjects.forEach((element) => {
+            element.vanillaTilt ? element.vanillaTilt.destroy() : {};
+          });
+        } else {
+          VanillaTilt.init(tiltingObjects, {
+            max: 5,
+            speed: 400,
+          });
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 700px)");
+      isTilt(x);
+      x.addListener(isTilt);
+    </script>
+  </body>
+</html>
