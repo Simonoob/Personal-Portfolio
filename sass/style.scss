@@ -105,6 +105,7 @@ body {
       transform-style: preserve-3d;
       transform: perspective(1000px);
       height: max-content;
+      max-width: 40rem;
 
       .title {
         background-color: black;
@@ -129,8 +130,14 @@ body {
         transform: scale(1.5);
       }
 
+      p {
+        color: black;
+        font-size: medium;
+      }
+
       #profile-photo {
-        border-radius: 50%;
+        border-radius: 0%;
+        width: 100%;
         transform: scale(1);
       }
 
@@ -139,7 +146,7 @@ body {
       }
 
       .btn-floating {
-        background-color: $bg-light;
+        background-color: black;
         color: $bg-color;
         min-width: fit-content;
         max-width: 100%;
