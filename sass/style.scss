@@ -15,6 +15,14 @@ body {
   display: flex;
   flex-direction: column;
 
+  .S {
+    font-family: "BioRhyme", serif;
+  }
+
+  .f {
+    font-family: "Space Mono", monospace;
+  }
+
   #particles-js {
     height: 100%;
     width: 100vw;
@@ -22,6 +30,36 @@ body {
     position: fixed;
     z-index: -1;
   }
+
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+    span {
+      color: $bg-light-transparent;
+      font-size: 30rem;
+      opacity: 0.1;
+      padding: 0;
+      margin: 0;
+    }
+
+    .S {
+      font-family: "BioRhyme", serif;
+      transform: scale(2);
+    }
+
+    .f {
+      font-family: "Space Mono", monospace;
+      font-size: 30rem;
+    }
+    z-index: 0;
+  }
+
   #home {
     height: 100vh;
     display: flex;
@@ -38,6 +76,7 @@ body {
 
       .btn-floating {
         background-color: $attention-transparent;
+        color: $bg-light;
         min-width: fit-content;
         max-width: 100%;
         border-radius: 2px;
@@ -55,31 +94,40 @@ body {
       }
 
       #contact-me {
-        background-color: $attention-transparent-2;
+        background-color: $attention-2-transparent;
       }
     }
   }
 
   #navbar {
-    background-color: $attention-transparent;
+    background-color: $attention-2-transparent;
     position: fixed;
     top: 0;
-    padding: 1rem;
+    padding: 0;
     height: fit-content;
     z-index: 1;
     transition: all 0.5s ease;
 
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
     a {
-      color: black;
+      color: $bg-light;
       padding: 0 2rem;
-      margin: 0 2rem;
+      margin: 0rem;
       width: max-content;
       text-align: center;
+      height: 100%;
     }
 
     a:hover {
-      background-color: black;
-      color: $attention;
+      background-color: $attention-2;
     }
   }
 
@@ -100,7 +148,7 @@ body {
 
     .card {
       padding: 3rem;
-      background-color: $bg-light-transparent;
+      background-color: $attention-2-transparent;
       z-index: 0;
       transform-style: preserve-3d;
       transform: perspective(1000px);
@@ -131,7 +179,7 @@ body {
       }
 
       p {
-        color: black;
+        color: $bg-light;
         font-size: medium;
       }
 
@@ -146,7 +194,7 @@ body {
       }
 
       .btn-floating {
-        background-color: black;
+        background-color: $attention;
         color: $bg-color;
         min-width: fit-content;
         max-width: 100%;
@@ -160,7 +208,7 @@ body {
   #projects-container {
     padding-top: 10rem;
     #projects {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $bg-color-2-transparent;
       padding: 2rem;
 
       .cards-container {
@@ -171,28 +219,44 @@ body {
       }
 
       #title {
-        background-color: $attention;
+        background-color: transparent;
         padding: 0.5rem;
-        justify-content: center;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $attention;
+        box-shadow: none;
         #title-text {
-          color: black;
+          color: $attention;
         }
       }
 
       .card {
         margin: 3rem;
-        background-color: $bg-light;
+        background-color: $attention-2-transparent;
         z-index: 0;
         transform-style: preserve-3d;
         transform: perspective(1000px);
 
         .collapsible {
-          transform: translateZ(50px);
+          transform: translateZ(20px);
+          color: $bg-light;
           .collapsible-header,
           i {
             font-size: x-large;
             margin: auto 0;
             text-align: center;
+            background-color: $attention-2;
+            border-color: $bg-light;
+          }
+
+          i {
+            background-color: transparent;
+          }
+
+          .collapsible-body {
+            background-color: $attention-transparent;
+            border-color: $bg-light;
+            color: $bg-light;
           }
         }
 
@@ -206,14 +270,17 @@ body {
         .btn,
         .btn-floating {
           background-color: $attention;
+          color: $bg-light;
           min-width: fit-content;
           border-radius: 2px;
           padding: 0 1rem;
           transform: translateZ(20px);
+          font-weight: bold;
         }
 
         .btn {
-          background-color: $bg-color;
+          background-color: $attention-2;
+          color: $bg-light;
         }
       }
 
@@ -226,19 +293,26 @@ body {
   #contact-container {
     padding: 10em 0;
     #contact {
-      background-color: $attention-transparent;
+      background-color: $bg-color-2-transparent;
       padding: 5rem;
 
       .card {
-        background-color: black;
-        padding: 0.5rem;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $attention;
+
+        box-shadow: none;
         h3 {
-          color: $bg-light;
+          color: $attention;
+          text-align: left;
         }
       }
 
       label {
         color: black;
+        color: $bg-light;
       }
 
       input,
@@ -246,6 +320,7 @@ body {
         border-color: $bg-light;
         margin: 2rem 0;
         transform: translateZ(20px);
+        color: $bg-light;
       }
 
       .input-field {
@@ -317,8 +392,8 @@ body {
       textarea.materialize-textarea.valid,
       textarea.materialize-textarea.valid:focus,
       .select-wrapper.valid > input.select-dropdown {
-        border-color: black;
-        box-shadow: 0 1px 0 0 black;
+        border-color: $bg-light;
+        box-shadow: 0 1px 0 0 $bg-light;
       }
 
       input:not([type]):focus:not([readonly]),
@@ -334,7 +409,7 @@ body {
       input[type="number"]:not(.browser-default):focus:not([readonly]),
       input[type="search"]:not(.browser-default):focus:not([readonly]),
       textarea.materialize-textarea:focus:not([readonly]) {
-        border-color: black;
+        border-color: $bg-light;
         box-shadow: none;
       }
 
@@ -344,12 +419,12 @@ body {
         transition: width 0.3s ease-in-out;
         width: 0%;
         min-width: fit-content;
+        background-color: $attention;
         z-index: 0;
       }
 
       button:hover {
         max-width: 100%;
-        color: $attention;
         width: 100%;
       }
     }

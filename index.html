@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Space+Mono:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <!--Import materialize.css-->
     <link
       rel="stylesheet"
@@ -38,6 +42,10 @@
     <!--HOME-->
     <div id="particles-js"></div>
 
+    <div class="background">
+      <span class="S">S</span><span class="f">f</span>
+    </div>
+
     <div class="container" id="home">
       <div
         class="card tilt"
@@ -61,13 +69,13 @@
         <a
           id="contact-me"
           href="#contact-container"
-          class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text top white-text"
+          class="btn-floating btn-large halfway-fab waves-effect waves-light flow-text top white-text"
           >Contact me</a
         >
 
         <a
           href="#projects-container"
-          class="btn-floating btn-large halfway-fab black-text waves-effect waves-light flow-text left"
+          class="btn-floating btn-large halfway-fab waves-effect waves-light flow-text left"
           >Check my work</a
         >
       </div>
@@ -76,16 +84,16 @@
     <!--NAVBAR-->
     <nav id="navbar" class="hide-on-med-and-down">
       <div class="nav-wrapper">
-        <a href="#home" class="flow-text tilt waves-effect waves-light"
-          >S. F.</a
+        <a href="#home" class="flow-text waves-effect waves-light"
+          ><span class="S">S.</span><span class="f">f.</span></a
         >
         <a
           href="https://github.com/Simonoob"
-          class="flow-text tilt waves-effect waves-light"
+          class="flow-text waves-effect waves-light"
           target="_blank"
           ><i class="fab fa-github"></i
         ></a>
-        <ul class="right tilt">
+        <ul class="right">
           <li>
             <a
               href="#projects-container"
@@ -114,9 +122,7 @@
     <!-- MOBILE NAVBAR -->
     <ul id="slide-out" class="sidenav">
       <li>
-        <a href="#home" class="flow-text tilt waves-effect waves-light"
-          >S. F.</a
-        >
+        <a href="#home" class="flow-text waves-effect waves-light">S. F.</a>
       </li>
       <li>
         <a
@@ -154,7 +160,9 @@
     <div class="container" id="projects-container">
       <div class="card" id="projects">
         <div class="card" id="title">
-          <h3 class="center-align" id="title-text">MY LATEST WORK</h3>
+          <h3 class="" id="title-text">
+            MY LATEST WORK
+          </h3>
         </div>
         <div class="cards-container">
           <div class="card project tilt">
@@ -496,7 +504,7 @@
           </div>
           <button
             type="submit"
-            class="btn btn-large waves-effect waves-light black center-align tilt"
+            class="btn btn-large waves-effect waves-light center-align tilt"
           >
             Submit
           </button>
