@@ -1,22 +1,14 @@
 @import "variables";
 
 @media (max-width: 480px) {
-  html {
-    font-size: 5px;
-  }
+  // html {
+  //   font-size: 5px;
+  // }
 
   body {
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
-
-    #particles-js {
-      height: 100%;
-      width: 100vw;
-      background: $bg-color;
-      position: fixed;
-      z-index: -1;
-    }
 
     .background {
       position: absolute;
@@ -29,23 +21,8 @@
       padding: 0;
 
       span {
-        color: $bg-light-transparent;
         font-size: 10rem;
-        opacity: 0.1;
-        padding: 0;
-        margin: 0;
       }
-
-      .S {
-        font-family: "BioRhyme", serif;
-        transform: scale(2);
-      }
-
-      .f {
-        font-family: "Space Mono", monospace;
-        font-size: 30rem;
-      }
-      z-index: 0;
     }
 
     #home {
@@ -63,7 +40,6 @@
         transform: perspective(1000px);
 
         .btn-floating {
-          background-color: $attention-transparent;
           min-width: fit-content;
           max-width: 100%;
           border-radius: 2px;
@@ -79,10 +55,6 @@
             color: $attention;
             transform: translateZ(50px);
           }
-        }
-
-        #contact-me {
-          background-color: $attention-2-transparent;
         }
       }
     }
@@ -109,37 +81,33 @@
     }
 
     #slide-out {
-      background-color: $bg-color-2-transparent;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       a {
-        background-color: $bg-color-2-transparent;
+        background-color: transparent;
         color: $attention;
         font-size: x-large;
-        height: 9rem;
-        text-decoration: underline;
         i {
           color: $attention;
           font-size: xx-large;
-          text-decoration: underline;
         }
       }
     }
 
     .sidenav-trigger {
       padding: 0.5rem;
-      color: rgb(0, 0, 0);
-      background-color: $attention;
+      color: $attention;
+      background-color: $bg-light;
       display: flex;
       justify-content: center;
       align-items: center;
       position: fixed;
-      top: -3rem;
-      right: -3rem;
+      top: -2rem;
+      right: -2rem;
       z-index: 3;
-      width: 10rem;
-      height: 10rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
       .material-icons {
         font-size: 40px;
@@ -159,7 +127,6 @@
       .carousel-item {
         min-width: fit-content;
         padding: 0 2rem;
-        cursor: grab;
       }
 
       .card {
@@ -213,9 +180,6 @@
         }
 
         .btn-floating {
-          background-color: $attention;
-          color: $bg-color;
-          border-radius: 2px;
         }
       }
     }
@@ -249,7 +213,6 @@
 
         .card {
           margin: 3rem 0;
-          background-color: $bg-light;
           max-width: 85vw;
           z-index: 0;
           transform-style: preserve-3d;

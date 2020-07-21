@@ -51,11 +51,13 @@ body {
     .S {
       font-family: "BioRhyme", serif;
       transform: scale(2);
+      pointer-events: none;
     }
 
     .f {
       font-family: "Space Mono", monospace;
       font-size: 30rem;
+      pointer-events: none;
     }
     z-index: 0;
   }
@@ -65,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     #opening {
-      background-color: $bg-color-2-transparent;
+      background-color: $bg-light-2-transparent;
       margin: auto;
       width: max-content;
       display: flex;
@@ -94,7 +96,7 @@ body {
       }
 
       #contact-me {
-        background-color: $attention-2-transparent;
+        background-color: $bg-light-2-transparent;
       }
     }
   }
@@ -127,46 +129,47 @@ body {
     }
 
     a:hover {
-      background-color: $attention-2;
+      background-color: $bg-light-2-transparent;
     }
   }
 
   #about {
     height: 100vh;
     padding-top: 10em;
-    display: flex;
-    justify-content: center;
     .carousel {
-      height: 100%;
+      height: 100vh;
     }
 
     .carousel-item {
       min-width: fit-content;
-      padding: 5rem;
+      min-height: max-content;
+      height: fit-content;
       cursor: grab;
     }
 
     .card {
+      min-width: fit-content;
+      min-height: 40vh;
+      height: 100%;
       padding: 3rem;
-      background-color: $attention-2-transparent;
+      background-color: $bg-light;
       z-index: 0;
       transform-style: preserve-3d;
       transform: perspective(1000px);
-      height: max-content;
-      max-width: 40rem;
 
       .title {
         background-color: black;
         padding: 0.5rem;
         color: $bg-light;
+        min-height: fit-content;
       }
 
       .card-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: flex-start;
-        padding: 1rem 0;
+        align-items: center;
+        padding: 0;
       }
 
       img {
@@ -180,14 +183,19 @@ body {
       }
 
       p {
-        color: $bg-light;
+        color: $bg-color;
         font-size: medium;
+        margin: 2rem 0;
       }
 
       #profile-photo {
-        border-radius: 0%;
         width: 100%;
+        width: 100%;
+        max-width: 30vh;
+        max-height: 30vh;
+        border-radius: 2px;
         transform: scale(1);
+        margin: 0 auto;
       }
 
       #profile-photo:hover {
@@ -198,10 +206,9 @@ body {
         background-color: $attention;
         color: $bg-color;
         min-width: fit-content;
-        max-width: 100%;
         border-radius: 2px;
         padding: 0 1rem;
-        transform: translateZ(50px);
+        transform: translateZ(20px);
       }
     }
   }
@@ -209,7 +216,7 @@ body {
   #projects-container {
     padding-top: 10rem;
     #projects {
-      background-color: $bg-color-2-transparent;
+      background-color: $bg-light-transparent;
       padding: 2rem;
 
       .cards-container {
@@ -224,42 +231,18 @@ body {
         padding: 0.5rem;
         border: none;
         border-radius: 0;
-        border-bottom: 2px solid $attention;
+        border-bottom: 2px solid $bg-color;
         box-shadow: none;
         #title-text {
-          color: $attention;
+          color: $bg-color;
         }
       }
 
       .card {
-        margin: 3rem;
+        margin: 0.5rem;
         background-color: $attention-2-transparent;
         z-index: 0;
-        transform-style: preserve-3d;
-        transform: perspective(1000px);
-
-        .collapsible {
-          transform: translateZ(20px);
-          color: $bg-light;
-          .collapsible-header,
-          i {
-            font-size: x-large;
-            margin: auto 0;
-            text-align: center;
-            background-color: $attention-2;
-            border-color: $bg-light;
-          }
-
-          i {
-            background-color: transparent;
-          }
-
-          .collapsible-body {
-            background-color: $attention-transparent;
-            border-color: $bg-light;
-            color: $bg-light;
-          }
-        }
+        color: $bg-light;
 
         img {
           transform: scale(0.65);
@@ -275,7 +258,6 @@ body {
           min-width: fit-content;
           border-radius: 2px;
           padding: 0 1rem;
-          transform: translateZ(20px);
           font-weight: bold;
         }
 
@@ -283,19 +265,27 @@ body {
           background-color: $attention-2;
           color: $bg-light;
         }
+
+        .card-reveal {
+          background-color: $attention-2-transparent;
+          color: $bg-light;
+        }
       }
 
       .project {
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
       }
     }
   }
 
   #contact-container {
     padding: 10em 0;
+    display: flex;
+    justify-content: center;
     #contact {
       background-color: $bg-color-2-transparent;
       padding: 5rem;
+      max-width: 50rem;
 
       .card {
         background-color: transparent;

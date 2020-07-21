@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Space+Mono:ital@1&display=swap"
       rel="stylesheet"
     />
+
     <!--Import materialize.css-->
     <link
       rel="stylesheet"
@@ -28,12 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Simone Fiorentini</title>
   </head>
@@ -165,180 +161,187 @@
           </h3>
         </div>
         <div class="cards-container">
-          <div class="card project tilt">
-            <div class="card-image">
-              <img
-                src="https://media3.giphy.com/media/kdhvjJ5mszb1eU7XH5/giphy.gif"
-                alt=""
-                class="responsive-img"
-              />
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <ul class="collapsible popout">
-                  <li>
-                    <div class="collapsible-header">
-                      <i class="material-icons">arrow_drop_down</i>
-                      Book Library
-                    </div>
-                    <div class="collapsible-body">
-                      <p>
-                        A full stack project involving front-end, real-time
-                        databases and user authentication.
-                        <br />
-                        It allows you to add books to your own personal library,
-                        mark when they are read and sync your data across any
-                        device.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <a
-                  href="https://simonoob.github.io/Book-Library/"
-                  target="_blank"
-                  class="btn-floating halfway-fab waves-effect btn-large"
-                  >Demo</a
-                >
-                <div class="card-action">
-                  <a
-                    href="https://github.com/Simonoob/Book-Library"
-                    target="_blank"
-                    class="btn waves-effect btn-large"
-                    >code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          <!--  -->
 
-          <div class="card project tilt">
-            <div class="card-image">
-              <img
-                src="https://media1.giphy.com/media/SXUNSmaRDXhzMM9jsq/giphy.gif"
-                alt=""
-                class="responsive-img"
-              />
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <ul class="collapsible popout">
-                  <li>
-                    <div class="collapsible-header">
-                      <i class="material-icons">arrow_drop_down</i>
-                      Online Calculator
-                    </div>
-                    <div class="collapsible-body">
-                      <p>
-                        Online Calculator project to practice Javascript classes
-                        and Object oriented programming, andvanced logic and
-                        keyboard input registration.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="card-action">
-                  <a
-                    href="https://github.com/Simonoob/Online-Calculator"
-                    target="_blank"
-                    class="btn waves-effect btn-large"
-                    >code</a
-                  >
-                </div>
-              </div>
-            </div>
-            <a
-              href="https://simonoob.github.io/Online-Calculator/"
-              target="_blank"
-              class="btn-floating halfway-fab waves-effect btn-large"
-              >Demo</a
+          <div class="card project sticky-action">
+            <div
+              class="card-image activator waves-effect waves-block waves-light"
             >
-          </div>
-
-          <div class="card project tilt">
-            <div class="card-image">
               <img
+                class="activator"
+                src="https://media3.giphy.com/media/kdhvjJ5mszb1eU7XH5/giphy.gif"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator"
+                >Book Library<i class="material-icons right">more_vert</i></span
+              >
+            </div>
+            <div class="card-action">
+              <a
+                href="https://simonoob.github.io/Book-Library/"
+                target="_blank"
+                class="btn-floating right waves-effect btn-large"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/Simonoob/Book-Library"
+                target="_blank"
+                class="btn waves-effect btn-large"
+                >code</a
+              >
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Book Library<i class="material-icons right">close</i></span
+              >
+              <p>
+                A full stack project involving front-end, real-time databases
+                and user authentication. It allows you to add books to your own
+                personal library, mark when they are read and sync your data
+                across any device.
+              </p>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card project sticky-action">
+            <div
+              class="card-image activator waves-effect waves-block waves-light"
+            >
+              <img
+                class="activator"
+                src="https://media1.giphy.com/media/SXUNSmaRDXhzMM9jsq/giphy.gif"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator"
+                >Online Calculator<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
+            </div>
+            <div class="card-action">
+              <a
+                href="https://simonoob.github.io/Online-Calculator/"
+                target="_blank"
+                class="btn-floating right waves-effect btn-large"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/Simonoob/Online-Calculator"
+                target="_blank"
+                class="btn waves-effect btn-large"
+                >code</a
+              >
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Online Calculator<i class="material-icons right"
+                  >close</i
+                ></span
+              >
+              <p>
+                Online Calculator project to practice Javascript classes and
+                Object oriented programming, andvanced logic and keyboard input
+                registration.
+              </p>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card project sticky-action">
+            <div
+              class="card-image activator waves-effect waves-block waves-light"
+            >
+              <img
+                class="activator"
                 src="https://media0.giphy.com/media/QTxg9r9CyLCbBGz5tS/giphy.gif"
               />
             </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <ul class="collapsible popout">
-                  <li>
-                    <div class="collapsible-header">
-                      <i class="material-icons">arrow_drop_down</i>
-                      Etch a Sketch
-                    </div>
-                    <div class="collapsible-body">
-                      <p>
-                        A desktop-only web-app that mimics the popular game.
-                        <br />
-                        The website relies heavily on DOM manipulation and CSS
-                        manipulation. It has all the classic tools like color
-                        picking and erasing. In adition to that, it has a
-                        special "random color" mode and a customizable grid
-                        system.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <a
-                  href="https://simonoob.github.io/Etch-a-Sketch/"
-                  target="_blank"
-                  class="btn-floating halfway-fab waves-effect btn-large"
-                  >Demo</a
-                >
-                <div class="card-action">
-                  <a
-                    href="https://github.com/Simonoob/Etch-a-Sketch"
-                    target="_blank"
-                    class="btn waves-effect btn-large"
-                    >code</a
-                  >
-                </div>
-              </div>
+            <div class="card-content">
+              <span class="card-title activator"
+                >Etch a Sketch<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
+            </div>
+            <div class="card-action">
+              <a
+                href="https://simonoob.github.io/Etch-a-Sketch/"
+                target="_blank"
+                class="btn-floating right waves-effect btn-large"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/Simonoob/Etch-a-Sketch"
+                target="_blank"
+                class="btn waves-effect btn-large"
+                >code</a
+              >
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Etch a Sketch<i class="material-icons right">close</i></span
+              >
+              <p>
+                The website relies heavily on DOM manipulation and CSS
+                manipulation. It has all the classic tools like color picking
+                and erasing. In adition to that, it has a special "random color"
+                mode and a customizable grid system.
+              </p>
             </div>
           </div>
+          <!--  -->
 
-          <div class="card project tilt">
-            <div class="card-image">
+          <!--  -->
+          <div class="card project sticky-action">
+            <div
+              class="card-image activator waves-effect waves-block waves-light"
+            >
               <img
+                class="activator"
                 src="https://media2.giphy.com/media/VIJf2pOBthIUpqdd7S/giphy.gif"
               />
             </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <ul class="collapsible popout">
-                  <li>
-                    <div class="collapsible-header">
-                      <i class="material-icons">arrow_drop_down</i>
-                      Personal Portfolio
-                    </div>
-                    <div class="collapsible-body">
-                      <p>
-                        The very site you are visiting right now.
-                        <br />
-                        It uses a combination of Particles.js, VanillaTilt.js,
-                        MaterializeCSS, Sass and JavaScript.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="card-action">
-                  <a
-                    href="https://github.com/Simonoob/Personal-Portfolio"
-                    target="_blank"
-                    class="btn waves-effect btn-large"
-                    >code</a
-                  >
-                </div>
-              </div>
+            <div class="card-content">
+              <span class="card-title activator"
+                >Personal Portfolio<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
             </div>
-            <a
-              href="#home"
-              class="btn-floating halfway-fab waves-effect btn-large"
-              >You are on it!</a
-            >
+            <div class="card-action">
+              <a
+                href="https://simonoob.github.io/Etch-a-Sketch/"
+                target="_blank"
+                class="btn-floating right waves-effect btn-large"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/Simonoob/Etch-a-Sketch"
+                target="_blank"
+                class="btn waves-effect btn-large"
+                >code</a
+              >
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Personal Portfolio<i class="material-icons right"
+                  >close</i
+                ></span
+              >
+              <p>
+                The very site you are visiting right now.
+                <br />
+                It uses a combination of Particles.js, VanillaTilt.js,
+                MaterializeCSS, Sass and JavaScript.
+              </p>
+            </div>
           </div>
+          <!--  -->
         </div>
       </div>
     </div>
@@ -347,117 +350,124 @@
 
     <div class="container">
       <div id="about">
-        <div class="carousel" id="about-container">
-          <a href="#one!" class="carousel-item">
-            <div class="card large">
-              <div class="card title">
-                <h3 class="center-align">WHAT I KNOW</h3>
-              </div>
-              <div class="card-content">
-                <img
-                  src="/imgs/HTML-5-01.svg"
-                  class="tooltipped"
-                  data-tooltip="Mark-up language. The basis of web programming"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/CSS-3-01.svg"
-                  class="tooltipped"
-                  data-tooltip="Styling language. It dresses your website"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/Sass-01.svg"
-                  class="tooltipped"
-                  data-tooltip="CSS pre-processor. It keeps the code organized"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/JavaScript-01.svg"
-                  class="tooltipped"
-                  data-tooltip="The protagonist of modern web-apps. It makes your site interactive"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/Git-01.svg"
-                  class="tooltipped"
-                  data-tooltip="Version Control System. It helps you in saving your code"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/GitHub-Icon-01.svg"
-                  class="tooltipped"
-                  data-tooltip="Github. A platform to store and share code"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/Materialize-CSS-01.svg"
-                  class="tooltipped"
-                  data-tooltip="MaterializeCSS. A front-end styling framework"
-                  data-position="top"
-                />
-              </div>
-            </div>
-          </a>
-          <a href="#two!" class="carousel-item">
-            <div class="card large">
-              <div class="card title">
-                <h3 class="center-align">WHAT I'M LEARNING</h3>
-              </div>
-              <div class="card-content">
-                <img
-                  src="/imgs/React-01.svg"
-                  class="tooltipped"
-                  data-tooltip="React.js. A front-end library/framework to simplify production"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/Npm-01.svg"
-                  class="tooltipped"
-                  data-tooltip="NPM. A way to download and store reusable code"
-                  data-position="top"
-                />
-                <img
-                  src="/imgs/Node-JS-01.svg"
-                  class="tooltipped"
-                  data-tooltip="Node.js. A JS-friendly way to work on the back-end"
-                  data-position="top"
-                />
-              </div>
-            </div>
-          </a>
-          <a href="#three!" class="carousel-item">
-            <div class="card large">
-              <div class="card title">
-                <div class="card-image">
+        <div id="about-container">
+          <!--  -->
+
+          <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center"></div>
+            <div class="carousel-item" href="#one!">
+              <div class="card large">
+                <div class="card title">
+                  <h3 class="center-align">WHAT I KNOW</h3>
+                </div>
+                <div class="card-content">
                   <img
-                    src="http://lorempixel.com/900/300/people"
-                    id="profile-photo"
-                    class="right"
+                    src="/imgs/HTML-5-01.svg"
+                    class="tooltipped"
+                    data-tooltip="Mark-up language. The basis of web programming"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/CSS-3-01.svg"
+                    class="tooltipped"
+                    data-tooltip="Styling language. It dresses your website"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/Sass-01.svg"
+                    class="tooltipped"
+                    data-tooltip="CSS pre-processor. It keeps the code organized"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/JavaScript-01.svg"
+                    class="tooltipped"
+                    data-tooltip="The protagonist of modern web-apps. It makes your site interactive"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/Git-01.svg"
+                    class="tooltipped"
+                    data-tooltip="Version Control System. It helps you in saving your code"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/GitHub-Icon-01.svg"
+                    class="tooltipped"
+                    data-tooltip="Github. A platform to store and share code"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/Materialize-CSS-01.svg"
+                    class="tooltipped"
+                    data-tooltip="MaterializeCSS. A front-end styling framework"
+                    data-position="top"
                   />
                 </div>
-                <span class="card-title">ABOUT ME</span>
-              </div>
-              <div class="card-content">
-                <p class="flow-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  <br />
-                  Nulla tenetur aliquid quas ullam quasi, recusandae saepe nemo
-                  velit quidem impedit,
-                  <br />
-                  officia atque quos tempore architecto aperiam tempora
-                  voluptatum! Explicabo, ipsam!
-                </p>
-                <button
-                  onclick="window.location.href='//github.com/Simonoob';"
-                  class="btn-floating halfway-fab waves-effect btn-large"
-                  target="_blank"
-                >
-                  <i class="fab fa-github"></i>
-                </button>
               </div>
             </div>
-          </a>
+            <div class="carousel-item" href="#two!">
+              <div class="card large">
+                <div class="card title">
+                  <h3 class="center-align">WHAT I'M LEARNING</h3>
+                </div>
+                <div class="card-content">
+                  <img
+                    src="/imgs/React-01.svg"
+                    class="tooltipped"
+                    data-tooltip="React.js. A front-end library/framework to simplify production"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/Npm-01.svg"
+                    class="tooltipped"
+                    data-tooltip="NPM. A way to download and store reusable code"
+                    data-position="top"
+                  />
+                  <img
+                    src="/imgs/Node-JS-01.svg"
+                    class="tooltipped"
+                    data-tooltip="Node.js. A JS-friendly way to work on the back-end"
+                    data-position="top"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <div class="card large">
+                <div class="card title">
+                  <div class="card-image">
+                    <img
+                      src="./imgs/adult-alone-blur-close-up-1172207.jpg"
+                      id="profile-photo"
+                      class="center"
+                    />
+                  </div>
+                  <span class="card-title">ABOUT ME</span>
+                </div>
+                <div class="card-content">
+                  <p class="flow-text left-align">
+                    Eager web deveveloper located in Helsinki, Finland.
+                    <br />
+                    <br />
+                    Highly interested in face tracking, interactive
+                    web-applications and APIs.
+                    <br />
+                    <br />
+                    Background in rehabilitation and health-promotion, with
+                    focus on teamworking and long-term commitment.
+                  </p>
+                  <button
+                    onclick="window.location.href='//github.com/Simonoob';"
+                    class="btn-floating halfway-fab waves-effect btn-large"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -522,6 +532,7 @@
       integrity="sha256-6DDZX77BrYnAmK9a3N3tvNPtyTIk1q1w9iW+UBtot3Y="
       crossorigin="anonymous"
     ></script>
+
     <script src="./JS/main.js"></script>
     <script src="./JS/vanilla-tilt.min.js"></script>
     <script>
@@ -536,6 +547,11 @@
 
       //initialize MaterializeCSS
       M.AutoInit();
+
+      let instance = M.Carousel.init({
+        fullWidth: true,
+        indicators: true,
+      });
 
       //initialize Vanilla-TiltJS
 
