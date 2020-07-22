@@ -39,7 +39,7 @@
     <div id="particles-js"></div>
 
     <div class="background">
-      <span class="S">S</span><span class="f">f</span>
+      <span class="S" id="S">S</span><span class="f" id="f">f</span>
     </div>
 
     <div class="container" id="home">
@@ -80,12 +80,12 @@
     <!--NAVBAR-->
     <nav id="navbar" class="hide-on-med-and-down">
       <div class="nav-wrapper">
-        <a href="#home" class="flow-text waves-effect waves-light"
+        <a href="#home" class="nav flow-text waves-effect waves-light"
           ><span class="S">S.</span><span class="f">f.</span></a
         >
         <a
           href="https://github.com/Simonoob"
-          class="flow-text waves-effect waves-light"
+          class="nav flow-text waves-effect waves-light"
           target="_blank"
           ><i class="fab fa-github"></i
         ></a>
@@ -93,21 +93,21 @@
           <li>
             <a
               href="#projects-container"
-              class="waves-effect waves-light flow-text"
+              class="nav waves-effect waves-light flow-text"
               >projects</a
             >
           </li>
           <li>
             <a
               href="#about-container"
-              class="waves-effect waves-light flow-text"
+              class="nav waves-effect waves-light flow-text"
               >about</a
             >
           </li>
           <li>
             <a
               href="#contact-container"
-              class="waves-effect waves-light flow-text"
+              class="nav waves-effect waves-light flow-text"
               >contact</a
             >
           </li>
@@ -123,7 +123,7 @@
       <li>
         <a
           href="https://github.com/Simonoob"
-          class="flow-text tilt waves-effect waves-light"
+          class="flow-text waves-effect waves-light"
           target="_blank"
           ><i class="fab fa-github"></i
         ></a>
@@ -354,55 +354,77 @@
           <!--  -->
 
           <div class="carousel carousel-slider center">
-            <div class="carousel-fixed-item center"></div>
             <div class="carousel-item" href="#one!">
               <div class="card large">
                 <div class="card title">
                   <h3 class="center-align">WHAT I KNOW</h3>
                 </div>
                 <div class="card-content">
-                  <img
-                    src="/imgs/HTML-5-01.svg"
-                    class="tooltipped"
-                    data-tooltip="Mark-up language. The basis of web programming"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/CSS-3-01.svg"
-                    class="tooltipped"
-                    data-tooltip="Styling language. It dresses your website"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/Sass-01.svg"
-                    class="tooltipped"
-                    data-tooltip="CSS pre-processor. It keeps the code organized"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/JavaScript-01.svg"
-                    class="tooltipped"
-                    data-tooltip="The protagonist of modern web-apps. It makes your site interactive"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/Git-01.svg"
-                    class="tooltipped"
-                    data-tooltip="Version Control System. It helps you in saving your code"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/GitHub-Icon-01.svg"
-                    class="tooltipped"
-                    data-tooltip="Github. A platform to store and share code"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/Materialize-CSS-01.svg"
-                    class="tooltipped"
-                    data-tooltip="MaterializeCSS. A front-end styling framework"
-                    data-position="top"
-                  />
+                  <a
+                    href="https://developer.mozilla.org/fi/docs/Web/HTML"
+                    target="_blank"
+                  >
+                    <img
+                      src="/imgs/HTML-5-01.svg"
+                      class="tooltipped"
+                      data-tooltip="Mark-up language. The basis of web programming"
+                      data-position="top"
+                    />
+                  </a>
+
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    target="_blank"
+                  >
+                    <img
+                      src="/imgs/CSS-3-01.svg"
+                      class="tooltipped"
+                      data-tooltip="Styling language. It dresses your website"
+                      data-position="top"
+                  /></a>
+
+                  <a href="https://sass-lang.com/" target="_blank">
+                    <img
+                      src="/imgs/Sass-01.svg"
+                      class="tooltipped"
+                      data-tooltip="CSS pre-processor. It keeps the code organized"
+                      data-position="top"
+                  /></a>
+
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    target="_blank"
+                    ><img
+                      src="/imgs/JavaScript-01.svg"
+                      class="tooltipped"
+                      data-tooltip="The protagonist of modern web-apps. It makes your site interactive"
+                      data-position="top"
+                  /></a>
+
+                  <a href="https://git-scm.com/" target="_blank">
+                    <img
+                      src="/imgs/Git-01.svg"
+                      class="tooltipped"
+                      data-tooltip="Version Control System. It helps you in saving your code"
+                      data-position="top"
+                    />
+                  </a>
+
+                  <a href="https://github.com/" target="_blank">
+                    <img
+                      src="/imgs/GitHub-Icon-01.svg"
+                      class="tooltipped"
+                      data-tooltip="Github. A platform to store and share code"
+                      data-position="top"
+                  /></a>
+
+                  <a href="https://materializecss.com/" target="_blank">
+                    <img
+                      src="/imgs/Materialize-CSS-01.svg"
+                      class="tooltipped"
+                      data-tooltip="MaterializeCSS. A front-end styling framework"
+                      data-position="top"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -412,30 +434,41 @@
                   <h3 class="center-align">WHAT I'M LEARNING</h3>
                 </div>
                 <div class="card-content">
-                  <img
-                    src="/imgs/React-01.svg"
-                    class="tooltipped"
-                    data-tooltip="React.js. A front-end library/framework to simplify production"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/Npm-01.svg"
-                    class="tooltipped"
-                    data-tooltip="NPM. A way to download and store reusable code"
-                    data-position="top"
-                  />
-                  <img
-                    src="/imgs/Node-JS-01.svg"
-                    class="tooltipped"
-                    data-tooltip="Node.js. A JS-friendly way to work on the back-end"
-                    data-position="top"
-                  />
+                  <a href="https://reactjs.org/" target="_blank">
+                    <img
+                      src="/imgs/React-01.svg"
+                      class="tooltipped"
+                      data-tooltip="React.js. A front-end library/framework to simplify development"
+                      data-position="top"
+                    />
+                  </a>
+
+                  <a href="https://docs.npmjs.com/about-npm/" target="_blank">
+                    <img
+                      src="/imgs/Npm-01.svg"
+                      class="tooltipped"
+                      data-tooltip="NPM. A way to organize and store reusable code"
+                      data-position="top"
+                    />
+                  </a>
+
+                  <a href="https://nodejs.org/en/about/" target="_blank">
+                    <img
+                      src="/imgs/Node-JS-01.svg"
+                      class="tooltipped"
+                      data-tooltip="Node.js. A JS-friendly way to work on the back-end"
+                      data-position="top"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
             <div class="carousel-item" href="#three!">
               <div class="card large">
                 <div class="card title">
+                  <h3 class="center-align">ABOUT ME</h3>
+                </div>
+                <div class="card-content about-content">
                   <div class="card-image">
                     <img
                       src="./imgs/adult-alone-blur-close-up-1172207.jpg"
@@ -443,9 +476,6 @@
                       class="center"
                     />
                   </div>
-                  <span class="card-title">ABOUT ME</span>
-                </div>
-                <div class="card-content">
                   <p class="flow-text left-align">
                     Eager web deveveloper located in Helsinki, Finland.
                     <br />
@@ -535,6 +565,13 @@
 
     <script src="./JS/main.js"></script>
     <script src="./JS/vanilla-tilt.min.js"></script>
+    <!-- scrolling libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
+    <!--  -->
+
+    <script src="./JS/animations.js"></script>
+
     <script>
       //initialize ParciclesJS
       particlesJS.load(

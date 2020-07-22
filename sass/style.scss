@@ -154,8 +154,6 @@ body {
       padding: 3rem;
       background-color: $bg-light;
       z-index: 0;
-      transform-style: preserve-3d;
-      transform: perspective(1000px);
 
       .title {
         background-color: black;
@@ -169,12 +167,19 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        padding: 0;
+        padding: 5rem;
+      }
+
+      .about-content {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
 
       img {
         width: 100px;
-        transform: translateZ(50px);
         transition: all 0.2s ease-in-out;
       }
 
@@ -186,6 +191,8 @@ body {
         color: $bg-color;
         font-size: medium;
         margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       #profile-photo {
@@ -208,13 +215,12 @@ body {
         min-width: fit-content;
         border-radius: 2px;
         padding: 0 1rem;
-        transform: translateZ(20px);
       }
     }
   }
 
   #projects-container {
-    padding-top: 10rem;
+    padding-top: 6rem;
     #projects {
       background-color: $bg-light-transparent;
       padding: 2rem;
